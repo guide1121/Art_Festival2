@@ -167,7 +167,9 @@ nav {
     padding: 20px 15px;
     border-radius: 12px;
 }
-
+#artworklist{
+    color: rgb(255, 255, 255);
+}
 .nav-links li {
     list-style: none;
     margin: 0 12px;
