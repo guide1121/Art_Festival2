@@ -62,5 +62,9 @@ function searchartwork(type) {
     // Display the modal
     $(".modal").css("display", "flex");
   }
+  function showAllArtwork() {
+    // Show all elements with class "individual"
+    $(".individual").css('display', 'block');
+  }
 
    
