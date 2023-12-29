@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #2f1f2b;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #2f1f2b;
+    font-size: 18px;
+}
+
+.banner{
+    background-color: #323278;
+    color: beige;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info{
+    text-align: center;
+}
+.banner-info img{
+    width: 400px;
+
+}
+
+.menu2{
+    padding: 3rem;
+    background-color: #252559;
+    color: beige;
+    height: 137px;
+  }
+
+.footer-top-con{
+    display: flex;
+    column-gap: 3rem;
+    color: beige;
+}
+
