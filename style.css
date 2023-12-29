@@ -18,7 +18,8 @@ body {
   backdrop-filter: blur(5px);  
 }
 
-nav {
+.bg-blur {
+  overflow: hidden;
     background: transparent;
     -webkit-backdrop-filter: blur(10px);  
     backdrop-filter: blur(10px);  
@@ -26,9 +27,9 @@ nav {
     justify-content: space-between;
     padding: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo img {
@@ -98,6 +99,7 @@ nav {
     align-items: center;
     padding: 20px 15px;
     border-radius: 12px;
+    
 }
 
 .nav-links li {
