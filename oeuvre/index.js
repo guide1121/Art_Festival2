@@ -67,4 +67,8 @@ function searchartwork(type) {
     $(".individual").css('display', 'block');
   }
 
-   
+  $(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
