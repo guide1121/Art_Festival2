@@ -1,39 +1,23 @@
-var artwork=[{
-    id:1,
-    img:'https://source.unsplash.com/random/?tech,care',
-    name:'Arttist1',
-    artist:' nayA ',
-    description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
-    type:'M.6/1'
-},{
-    id:2,
-    img:'https://source.unsplash.com/random/?tech,substance',
-    name:'Arttist2',
-    artist:' nayB ',
-    description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
-    type:'M.6/2'
-},{
-    id:3,
-    img:'https://source.unsplash.com/random/?tech,choose',
-    name:'Arttist3',
-    artist:' nayC ',
-    description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
-    type:'M.6/3'
-}];
 
-
-$(document).ready(()=> {
-
-    var html= '';
-    for (let i=0;i<artwork.length;i++){
-        html+=` <div onclick="showDetails(${i})" class="individual ${artwork[i].type}">
-        <img class="artwork-img" src="${artwork[i].img}" alt="">
-        <p style="font-size: 1vw;">${artwork[i].name}</p>
-        <p style="font-size: 1vw;">${artwork[i].artist}</p>
-      </div>`;
-    }
-    $("#artworklist").html(html);
-})
+// Load the artwork data from a JSON file
+$(document).ready(() => {
+  // Fetch JSON data from a file
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      // Process the JSON data
+      var html = '';
+      for (let i = 0; i < data.length; i++) {
+        html += `<div onclick="showDetails(${i})" class="individual ${data[i].type}">
+          <img class="artwork-img" src="${data[i].img}" alt="">
+          <p style="font-size: 1vw;">${data[i].name}</p>
+          <p style="font-size: 1vw;">${data[i].artist}</p>
+        </div>`;
+      }
+      $("#artworklist").html(html);
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
+});
 
 function searchartwork(type) {
     // Hide all elements with class "individual"
