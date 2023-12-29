@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>artwork</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src ="index.js"></script>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+
+  <!-- logo -->
+  <nav>
+    <div class="logo">
+      <a href="#">Logo</a>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="class">
+
+      <a onclick="searchartwork('M.6/1')"class="classroom">
+        Room1
+      </a>
+      <a onclick="searchartwork('M.6/2')"class="classroom">
+        Room2
+      </a>
+      <a onclick="searchartwork('M.6/3')"class="classroom">
+        Room3
+      </a>
+      <a onclick="searchartwork('M.6/4')"class="classroom">
+        Room4
+      </a>
+      <a onclick="searchartwork('M.6/5')"class="classroom">
+        Room5
+      </a>
+      <a onclick="searchartwork('M.6/6')"class="classroom">
+        Room6
+      </a>
+    </div>
+    <div id="artworklist"class="artwork">
+ 
+    </div>
+  </div>
+
+  <div class="modal" style="display:none;" onclick="closeModal()">
+    <div class="modal-bg"></div>
+    <div class="modal-page" onclick="event.stopPropagation();">
+        <h2>detail</h2>
+        <br>
+        <div class="modal-details">
+            <img class="details-img" src="" alt="">
+            <div class="details">
+                <p style="font-size: 2vw;"></p>
+                <p style="font-size: 1.5vw;"></p>
+                <br>
+                <p style="font-size: 1.5vw;"></p>
+                <br>
+                <div class="btn-control">
+                    <button class="btn" onclick="closeModal()">
+                        close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
