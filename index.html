@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCCPL art gallery</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- logo -->
-  <nav>
+  <nav class = "bg-blur">
     <div class="logo">
-        <a href="#">Logo</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/PCSHS_Phitsanulok_%28th%29.svg/375px-PCSHS_Phitsanulok_%28th%29.svg.png" alt="">
     </div>
 
 <!-- menu -->
-    <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Oeuvre</a></li>
-        <li><a href="#">Event photo</a></li>
-        <li><a href="#">Contacts</a></li>
-    </ul>
+<ul class="nav-links">
+  <li class="forward"><a href="#">Home</a></li>
+  <li class="forward"><a href="#">Event Photo</a></li>
+  <li class="forward">
+    <div class = "dropdown">
+      <a href="#" class = "dropbtn">Oeuvre</a>
+      <div class="dropdown-content">
+        <a href="#">6/1</a>
+        <a href="#">6/2</a>
+        <a href="#">6/4</a>
+        <a href="#">6/5</a>
+        <a href="#">6/6</a>
+        <a href="#">Teacher</a>
+      </div>
+  </li>
+  <li class="forward"><a href="#">Contact</a></li>
+</ul>
   </nav>
 
 <!--picture-->
-  <section class="banner">
-    <div class="banner-info">
-        <img src="CA555E2B-1BB4-4D04-A1B0-30A8BD5C67A3.png" alt="">
+  <div class="banner">
         <h1>CONSEPT</h1>
         <p>pccpl26</p>
-    </div>
-  </section>
+  </div>
+
 
   <div class="menu2">
     <div class="container">
