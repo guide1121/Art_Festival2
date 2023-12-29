@@ -1,21 +1,21 @@
 var artwork=[{
     id:1,
     img:'https://source.unsplash.com/random/?tech,care',
-    name:'Tanyong',
+    name:'Arttist1',
     artist:' nayA ',
     description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
     type:'M.6/1'
 },{
     id:2,
     img:'https://source.unsplash.com/random/?tech,substance',
-    name:'Tanyong2',
+    name:'Arttist2',
     artist:' nayB ',
     description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
     type:'M.6/2'
 },{
     id:3,
     img:'https://source.unsplash.com/random/?tech,choose',
-    name:'Tanyong3',
+    name:'Arttist3',
     artist:' nayC ',
     description:'Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!',
     type:'M.6/3'
