@@ -8,10 +8,10 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.541);
     background-image: url('https://eu-assets.simpleview-europe.com/manchester2016/imageresizer/?image=%2Fdmsimgs%2Fmanchester-art-gallery_2__1332734200.jpg&action=ProductDetail');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 nav {
@@ -31,14 +31,16 @@ nav {
 }
 
 .banner {
-    padding: 10%;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
     text-align: center;
-    background-color: #0000002d;
+    background-color: #0000004d;
     color: beige;
     height: auto;
     justify-content: center;
     display: block;
-    align-items: center;
+    
 }
 
 .banner-info {
@@ -48,6 +50,15 @@ nav {
 .banner-info img {
     width: 100%; /* Adjusted for better responsiveness */
     max-width: 400px; /* Added max-width for better responsiveness */
+}
+
+.detail {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left : 20%;
+    margin-right : 20%;
 }
 
 .footer-top-con {
@@ -193,92 +204,100 @@ nav {
 }
 
 @media (max-width: 767px) {
+    /* Navigation */
     .nav-links {
-        flex-direction: column; /* Adjusted for better responsiveness */
-        align-items: flex-start; /* Adjusted for better responsiveness */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-links li {
-        margin: 8px 0; /* Adjusted margin for better responsiveness */
+        margin: 8px 0;
     }
 
     .nav-links li a:before {
-        height: 2px; /* Adjusted height for better responsiveness */
+        height: 2px;
     }
 
     .nav-links li.upward a:before {
-        bottom: -2px; /* Adjusted bottom for better responsiveness */
+        bottom: -2px;
     }
 
+    /* Footer */
     .footer-top-con {
-        column-gap: 1rem; /* Adjusted column-gap for better responsiveness */
+        column-gap: 1rem;
     }
 
     .footer-top-item,
     .footer-top-item-social {
-        max-width: 100%; /* Adjusted max-width for better responsiveness */
-        padding: 0 15px; /* Adjusted padding for better responsiveness */
+        max-width: 100%;
+        padding: 0 15px;
     }
 
+    /* Banner */
     .banner-info img {
-        max-width: 100%; /* Added max-width for better responsiveness */
+        max-width: 100%;
     }
 
+    /* Navigation Dropdown */
     .nav-links li.forward a:before {
-        width: 0; /* Adjusted width for better responsiveness */
+        width: 0;
     }
 }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
+
+/* Social Icons */
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
 }
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
 }
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
 }
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
 }
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998;
 }
-.social-icons a.instagram:hover
-{
-  background-color:#ed00d9
+
+.social-icons a.instagram:hover {
+    background-color: #ed00d9;
 }
