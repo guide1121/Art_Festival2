@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://eu-assets.simpleview-europe.com/manchester2016/imageresizer/?image=%2Fdmsimgs%2Fmanchester-art-gallery_2__1332734200.jpg&action=ProductDetail') ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    -webkit-backdrop-filter: blur(5px);  
+    backdrop-filter: blur(5px); 
+  
+    
+  }
+
+.body {
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: #0000004d;
+    color: beige;
+    height: auto;
+    justify-content: center;
+    display: block;
+}
+
+nav{
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);    
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.nav-links {
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);  
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 12px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.nav-links li a {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.nav-links li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #efa434;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+    width: 100%;
+}
+
+.nav-links li.forward a:before {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.nav-links li.forward a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@media (max-width: 767px) {
+    /* Navigation */
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+
+    .nav-links li a:before {
+        height: 2px;
+    }
+
+    .nav-links li.upward a:before {
+        bottom: -2px;
+    }
+
+    /* Footer */
+    .footer-top-con {
+        column-gap: 1rem;
+    }
+
+    .footer-top-item,
+    .footer-top-item-social {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Banner */
+    .banner-info img {
+        max-width: 100%;
+    }
+
+    /* Navigation Dropdown */
+    .nav-links li.forward a:before {
+        width: 0;
+    }
+}
+
+.room-con{
+    display: flex;
+}
+
+
+.room-info {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.room-info h2{
+    font-size: 2rem;
+}
+
+.room-info .room-btn{
+    margin-left: 15px;
+    display: inline-block;
+    background-color: #5f5a4d;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: beige;
+    transition: 0.3s;
+}
+
+.room-info .room-btn:hover{
+    background: #4f493f;
+    color: beige;
+    transform: scale(1.05);
+}
+
+.blog-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding: 30px;
+    
+}
+
+.blog-item img {
+    border-radius: 10px;
+    width: 100%
+   
+}
+
+.blog-title{
+    margin: 2rem 0; 
+    text-align: center;
+}
+
+.blog-item h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.blog-item p {
+    margin: 1rem 0;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+
+
+
+.social-icons a.instagram:hover {
+    background-color: #ed00d9;
+}
+
+.footer-top-con {
+    padding: 20px;
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);  
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    column-gap: 3rem;
+    color: beige;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-top-item {
+    max-width: 50%;
+}
+
+.footer-top-item-social {
+    padding-left: 30%;
+    align-items: end;
+}
