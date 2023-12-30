@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
    <link rel="stylesheet" href="B.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="index_con.js"></script>
 </head>
 <body>
     <nav class="bg-blur">
@@ -16,9 +18,9 @@
         <!-- menu -->
         <ul class="nav-links">
           <li class="forward"><a href="../index.html">Home</a></li>
-          <li class="forward"><a href="photo.html">Event Photo</a></li>
+          <li class="forward"><a href="../event_photo/photo.html">Event Photo</a></li>
           <li class="forward"><a href="../oeuvre/art.html">Oeuvre</a></li>
-          <li class="forward"><a href="#">Contact</a></li>
+          <li class="forward"><a href="A.html">Contact</a></li>
         </ul>
       </nav>
 <div class = 'body'>
@@ -28,12 +30,15 @@
                 <div class="room-info">
                     <h2>Contact</h2>
                     <br>
-                    <a href="#" class="room-btn">room1</a>
-                    <a href="#" class="room-btn">room2</a>
-                    <a href="#" class="room-btn">room3</a>
-                    <a href="#" class="room-btn">room4</a>
-                    <a href="#" class="room-btn">room5</a>
-                    <a href="#" class="room-btn">room6</a>
+                    <a href="#" class="room-btn" onclick = "searchartwork('6/1')">room1</a>
+                    <a href="#" class="room-btn" onclick="searchartwork('6/2')">room2</a>
+                    <a href="#" class="room-btn" onclick="searchartwork('6/3')">room3</a>
+                    <a href="#" class="room-btn" onclick="searchartwork('6/4')">room4</a>
+                    <a href="#" class="room-btn" onclick="searchartwork('6/5')">room5</a>
+                    <a href="#" class="room-btn" onclick="searchartwork('6/6')">room6</a>
+                    <a href = "" onclick="showAllArtwork()"class="room-btn">
+                        All
+                      </a>
                 </div>
             </div>
         </div>
@@ -46,42 +51,7 @@
             <div class="blog-title">
                 <h2>members</h2>
             </div>
-
-            <div class="blog-con">
-
-                <div class="blog-item">
-                    <img src="https://www.khaosod.co.th/wpapp/uploads/2023/09/S__100163615_0_0_0.jpg" alt="">
-                    <h4>name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quidem.</p>
-                    <p><i></i></p>
-                </div>
-
-
-                <div class="blog-item">
-                    <img src="https://www.newtv.co.th/images/content/ct_20230901055112862.jpg" alt="">
-                    <h4>name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quidem.</p>
-                    <p><i></i></p>
-                </div>
-
-
-                <div class="blog-item">
-                    <img src="https://www.khaosod.co.th/wpapp/uploads/2023/09/S__100163632_0_0_0.jpg" alt="">
-                    <h4>name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quidem.</p>
-                    <p><i></i></p>
-                </div>
-
-                <div class="blog-item">
-                    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jSSz1.img" alt="">
-                    <h4>name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quidem.</p>
-                    <ul class="social-icons">
-                        <li><a class="instagram" href="https://www.instagram.com/geesutthirak?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><P><i class="fa fa-instagram"></i>geesutthirak</P></a></li> 
-                   </ul>
-                </div>
-
-
+            <div class="blog-con" id = "blog-con">
             </div>
 
         </div>

@@ -12,13 +12,15 @@ $(document).ready(() => {
       // Process the JSON data
       var html = '';
       for (let i = 0; i < data.length; i++) {
-        html += `<div onclick="showDetails(${i})" class="individual ${data[i].type}">
-          <img class="artwork-img" src="${data[i].img}" alt="">
-          <p style="font-size: 1vw;">${data[i].name}</p>
-          <p style="font-size: 1vw;">${data[i].artist}</p>
+        html += `<div onclick="showDetails(${i})" class="individual ${data[i].type}" id = "blog -item">
+          <img class="contact-img" src="${data[i].img}" alt="">
+          <h4 style = "margin-top: 1rem;
+          font-size: 1.5rem;">${data[i].name}</h4>
+          <p style="margin: 1rem 0;">${data[i].description}</p>
+          <p><i></i></p>
         </div>`;
       }
-      $("#artworklist").html(html);
+      $("#blog-con").html(html);
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
@@ -27,8 +29,7 @@ $(document).ready(() => {
     // Update modal content with selected artwork details
     $(".modal img").attr("src", selectedArtwork.img);
     $(".modal p:nth-child(1)").text(selectedArtwork.name);
-    $(".modal p:nth-child(2)").text(selectedArtwork.artist);
-    $(".modal p:nth-child(4)").text(selectedArtwork.description);
+    $(".modal p:nth-child(2)").text(selectedArtwork.description); // Adjusted to display description
     // Display the modal
     $(".modal").css("display", "flex");
   }
@@ -36,6 +37,7 @@ $(document).ready(() => {
   window.showDetails = showDetails; // Expose the function globally
 });
 
+// Rest of your code remains unchanged
 function searchartwork(type) {
   // Hide all elements with class "individual"
   $(".individual").css('display', 'none');
@@ -46,12 +48,6 @@ function searchartwork(type) {
   // Show the elements with the specified type
   $("." + escapedType).css('display', 'block');
 }
-
-function closeModal() {
-  // Hide the modal
-  $(".modal").css("display", "none");
-}
-
 function showAllArtwork() {
   // Show all elements with class "individual"
   $(".individual").css('display', 'block');

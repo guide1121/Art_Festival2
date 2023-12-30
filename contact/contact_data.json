@@ -1,33 +1,29 @@
 [
   {
     "id": 1,
-    "img": "https://source.unsplash.com/random/?tech,care",
+    "img": "https://drive.google.com/uc?id=1dozAL5MMsS9LgiQ7iBIcjPaj8JS3gtK8",
     "name": "Artist1",
-    "artist": "nayA",
     "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/1"
   },
   {
     "id": 2,
-    "img": "https://source.unsplash.com/random/?tech,substance",
+    "img": "https://www.newtv.co.th/images/content/ct_20230901055112862.jpg",
     "name": "Artist2",
-    "artist": "nayB",
     "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/2"
   },
   {
     "id": 3,
-    "img": "https://source.unsplash.com/random/?tech,choose",
+    "img": "https://www.khaosod.co.th/wpapp/uploads/2023/09/S__100163632_0_0_0.jpg",
     "name": "Artist3",
-    "artist": "nayC",
     "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/3"
   },
   {
     "id": 4,
-    "img": "https://source.unsplash.com/random/?tech,choose",
+    "img": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jSSz1.img",
     "name": "Artist4",
-    "artist": "nayA",
     "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/4"
   },
@@ -38,45 +34,5 @@
     "artist": "nayB",
     "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/5"
-  },
-  {
-    "id": 6,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist6",
-    "artist": "nayC",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/6"
-  },
-  {
-    "id": 7,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist7",
-    "artist": "nayA",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "Teacher"
-  },
-  {
-    "id": 8,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist8",
-    "artist": "nayB",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/1"
-  },
-  {
-    "id": 9,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist9",
-    "artist": "nayC",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/5"
-  },
-  {
-    "id": 10,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist10",
-    "artist": "nayA",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/3"
   }
 ]
