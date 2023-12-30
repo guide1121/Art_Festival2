@@ -35,9 +35,8 @@ $(document).ready(() => {
         const containerHeight = (containerWidth / imgWidth) * imgHeight;
 
         html += `<div onclick="showDetails(${i})"
-                    class="individual ${data[i].type}"
-                    >
-                  <img class="artwork-img" src="${data[i].img}" alt="" style="height: ${containerHeight}px; width: ${containerWidth}px;">
+                    class="individual ${data[i].type}">
+                  <img class="artwork-img" src="${data[i].img}" alt="" style="height: ${containerHeight}px; width: ${containerWidth}px; >
                   <p style="font-size: 1vw;">${data[i].name}</p>
                   <p style="font-size: 1vw;">${data[i].artist}</p>
                 </div>`;

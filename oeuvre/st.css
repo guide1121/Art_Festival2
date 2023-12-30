@@ -85,15 +85,18 @@ nav {
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: 30%;
+
 }
 
 .individual:hover {
     transform: scale(1.03);
+    
 }
 
 .artwork-img {
     object-fit: cover;
     border-radius: 10px;
+
 }
 .artworklist{
     margin-left: 10%;
@@ -112,9 +115,8 @@ nav {
 }
 
 .modal-page {
-    z-index: 99;
-    width: 80%; /* Adjust as needed */
-    height: auto;
+    width: 100%;
+    max-width: 60vw;
     overflow: hidden;
     background: rgb(255, 255, 255);
     border-radius: 15px;
@@ -132,10 +134,11 @@ nav {
 }
 
 .modal-details img {
-    width: 30vw;
-    height: 30vw;
+    margin-left: 30px;
+    max-width: 40%;
+    max-height: 500px; /* Adjust this value based on your needs */
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .details {
