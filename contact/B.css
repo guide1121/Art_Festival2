@@ -173,22 +173,29 @@ nav{
 }
 
 .room-info h2{
-    font-size: 2rem;
+    font-size: 60px;
 }
 
 .room-info .room-btn{
-    margin-left: 15px;
-    display: inline-block;
-    background-color: #5f5a4d;
-    padding: 1rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    text-decoration: none;
-    color: beige;
+    color: rgb(255, 255, 255);
     transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    background: rgba(0, 0, 0, 0.226);
 }
 
 .room-info .room-btn:hover{
-    background: #4f493f;
+    background: rgba(41, 41, 157, 0.445);
     color: beige;
     transform: scale(1.05);
 }
@@ -207,8 +214,9 @@ nav{
 }
 
 .contact-img {
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 767px) {

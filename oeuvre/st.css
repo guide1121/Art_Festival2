@@ -84,6 +84,7 @@ nav {
 .individual {
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 30%;
 }
 
 .individual:hover {
@@ -91,8 +92,6 @@ nav {
 }
 
 .artwork-img {
-    width: 100%;
-    height: 17vw;
     object-fit: cover;
     border-radius: 10px;
 }
