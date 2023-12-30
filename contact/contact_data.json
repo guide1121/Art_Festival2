@@ -1,38 +1,9 @@
 [
   {
-    "id": 1,
-    "img": "https://drive.google.com/uc?id=1dozAL5MMsS9LgiQ7iBIcjPaj8JS3gtK8",
-    "name": "Artist1",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/1"
-  },
-  {
-    "id": 2,
-    "img": "https://www.newtv.co.th/images/content/ct_20230901055112862.jpg",
-    "name": "Artist2",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/2"
-  },
-  {
-    "id": 3,
-    "img": "https://www.khaosod.co.th/wpapp/uploads/2023/09/S__100163632_0_0_0.jpg",
-    "name": "Artist3",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/3"
-  },
-  {
-    "id": 4,
-    "img": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jSSz1.img",
-    "name": "Artist4",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/4"
-  },
-  {
-    "id": 5,
-    "img": "https://source.unsplash.com/random/?tech,choose",
-    "name": "Artist5",
-    "artist": "nayB",
-    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
-    "type": "6/5"
+    "ประทับเวลา": "30/12/2023, 21:27:34",
+    "Instagram": "nphr._",
+    "รูปภาพตัวเอง (ขอรูปที่สวย/หล่อที่สุดด)": "https://drive.google.com/open?id=1jKP-9uJtPR71j-jpQTeid7nvPhtdp9Rn",
+    "แคปชงแคปชั่น": "ศิลปะไม่มีถูกผิด แต่มีเกรดนะจ๊ะ",
+    "ห้อง": "6/1"
   }
 ]
