@@ -4,7 +4,7 @@
     "img": "https://source.unsplash.com/random/?tech,care",
     "name": "Artist1",
     "artist": "nayA",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/1"
   },
   {
@@ -12,7 +12,7 @@
     "img": "https://source.unsplash.com/random/?tech,substance",
     "name": "Artist2",
     "artist": "nayB",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/2"
   },
   {
@@ -20,7 +20,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist3",
     "artist": "nayC",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/3"
   },
   {
@@ -28,7 +28,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist4",
     "artist": "nayA",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/4"
   },
   {
@@ -36,7 +36,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist5",
     "artist": "nayB",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/5"
   },
   {
@@ -44,7 +44,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist6",
     "artist": "nayC",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/6"
   },
   {
@@ -52,7 +52,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist7",
     "artist": "nayA",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "Teacher"
   },
   {
@@ -60,7 +60,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist8",
     "artist": "nayB",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/1"
   },
   {
@@ -68,7 +68,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist9",
     "artist": "nayC",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/5"
   },
   {
@@ -76,7 +76,7 @@
     "img": "https://source.unsplash.com/random/?tech,choose",
     "name": "Artist10",
     "artist": "nayA",
-    "descripton": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
+    "description": "Lorem ipsum dolor rem totam sapiente sint perspiciatis, beatae expedita magni velit eveniet incidunt suscipit eius laborum at deleniti repellendus? Aperiam!'",
     "type": "6/3"
   }
 ]
