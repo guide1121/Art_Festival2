@@ -28,7 +28,7 @@ $(document).ready(() => {
         const imgHeight = imgElement.height;
 
         // Set a maximum width for the image containers
-        const maxWidth = 400; // Adjust this value as needed
+        const maxWidth = 250; // Adjust this value as needed
 
         // Calculate the corresponding height based on the maximum width
         const containerWidth = Math.min(imgWidth, maxWidth);
@@ -36,7 +36,7 @@ $(document).ready(() => {
 
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].type}"
-                    style="height: ${containerHeight}px; width: ${containerWidth}px;">
+                    >
                   <img class="artwork-img" src="${data[i].img}" alt="" style="height: ${containerHeight}px; width: ${containerWidth}px;">
                   <p style="font-size: 1vw;">${data[i].name}</p>
                   <p style="font-size: 1vw;">${data[i].artist}</p>
