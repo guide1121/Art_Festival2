@@ -258,11 +258,13 @@ nav {
 }
 
 .logo img {
-    width: 50px;
+    width: 5vw;
     height: auto;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 
 .footer-top-con {
     padding: 20px;
@@ -283,6 +285,7 @@ nav {
     padding-left: 30%;
     align-items: end;
 }
+
 
 .social-icons {
     padding-left: 0;
@@ -360,7 +363,7 @@ nav {
 
 /* Media Queries */
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     nav {
         height: 15vw;
     }
@@ -396,7 +399,7 @@ nav {
     }
 
     .nav-links li a {
-        font-size: 10%;
+        font-size: 3vw;
     }
 
     .classroom {
@@ -426,5 +429,20 @@ nav {
         width: 10%;
         display: flex;
         flex-direction: column;
+    }
+    .footer-top-con {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .footer-top-item {
+        max-width: 100%;
+    }
+
+
+    .footer-top-item-social {
+        margin-top: 2vw;
+        padding-left: 0;
+        align-items: left;
     }
 }
