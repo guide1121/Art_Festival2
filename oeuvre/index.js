@@ -36,7 +36,7 @@ $(document).ready(() => {
 
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].type}">
-                  <img class="artwork-img" src="${data[i].img}" alt="" style="height: ${containerHeight}px; width: ${containerWidth}px; >
+                  <img class="artwork-img" src="${data[i].img}" alt="" style="height: auto; max-width: 100%; >
                   <p style="font-size: 1vw;">${data[i].name}</p>
                   <p style="font-size: 1vw;">${data[i].artist}</p>
                 </div>`;
@@ -53,7 +53,7 @@ $(document).ready(() => {
     $(".modal p:nth-child(1)").text(selectedArtwork.name);
     $(".modal p:nth-child(2)").text(selectedArtwork.artist);
     $(".modal p:nth-child(4)").text(selectedArtwork.description);
-    $(".modal").css("display", "flex");
+    $(".modal").css("display", "block");
   }
 
   window.showDetails = showDetails; // Expose the function globally
