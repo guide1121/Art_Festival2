@@ -36,6 +36,8 @@ $(document).ready(() => {
         </div>`;
       }
       $("#blog-con").html(html);
+            // Hide loading indicator after data is loaded
+            $("#loading-indicator").hide();
     })
     .catch(error => {
       // Hide loading indicator in case of an error

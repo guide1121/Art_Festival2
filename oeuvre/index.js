@@ -11,6 +11,8 @@ $(document).ready(() => {
       img.onerror = reject;
     });
   }
+  // Display loading indicator
+  $("#loading-indicator").show();
 
   // Fetch JSON data from a file
   fetch('https://script.google.com/macros/s/AKfycbzQNwKy7wzClW-VJXwOiu22lYoamaQDrI58J-QI25owk423LV3JoYXHx3Yibnzwwlg_/exec')
@@ -43,8 +45,14 @@ $(document).ready(() => {
       }
 
       $("#artworklist").html(html);
+      // Hide loading indicator after data is loaded
+      $("#loading-indicator").hide();
     })
-    .catch(error => console.error('Error fetching JSON:', error));
+    .catch(error => {
+      // Hide loading indicator in case of an error
+      $("#loading-indicator").hide();
+      console.error('Error fetching JSON:', error);
+  });
 
     function extractFileId(url) {
       const match = url.match(/\/d\/(.+?)\/|\/open\?id=(.+?)$/);
