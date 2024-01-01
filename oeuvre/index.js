@@ -13,7 +13,7 @@ $(document).ready(() => {
   }
 
   // Fetch JSON data from a file
-  fetch('data.json')
+  fetch('https://script.google.com/macros/s/AKfycbzQNwKy7wzClW-VJXwOiu22lYoamaQDrI58J-QI25owk423LV3JoYXHx3Yibnzwwlg_/exec')
     .then(response => response.json())
     .then(async jsonData => {
       // Store the JSON data in the 'data' variable
@@ -22,23 +22,23 @@ $(document).ready(() => {
       // Process the JSON data
       var html = '';
       for (let i = 0; i < data.length; i++) {
+        const fileId = extractFileId(data[i]['รูปผลงาน']);
+        const imageUrl = `https://drive.google.com/uc?id=${fileId}`;
+
         // Load the image dynamically to get its dimensions
-        const imgElement = await loadImage(data[i].img);
+        const imgElement = await loadImage(imageUrl);
         const imgWidth = imgElement.width;
         const imgHeight = imgElement.height;
 
         // Set a maximum width for the image containers
         const maxWidth = 250; // Adjust this value as needed
-
-        // Calculate the corresponding height based on the maximum width
-        const containerWidth = Math.min(imgWidth, maxWidth);
-        const containerHeight = (containerWidth / imgWidth) * imgHeight;
+        
 
         html += `<div onclick="showDetails(${i})"
-                    class="individual ${data[i].type}">
-                  <img class="artwork-img" src="${data[i].img}" alt="" style="height: auto; max-width: 100%; >
-                  <p style="font-size: 1vw;">${data[i].name}</p>
-                  <p style="font-size: 1vw;">${data[i].artist}</p>
+                    class="individual ${data[i].ห้อง}">
+                  <img class="artwork-img" src="${imageUrl}" alt="" style="height: auto; max-width: 100%; >
+                  <p style="font-size: 1vw;">${data[i].ชื่อภาพ}</p>
+                  <p style="font-size: 1vw;">${data[i].ชื่อจริง}</p>
                 </div>`;
       }
 
@@ -46,13 +46,19 @@ $(document).ready(() => {
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
+    function extractFileId(url) {
+      const match = url.match(/\/d\/(.+?)\/|\/open\?id=(.+?)$/);
+      return match ? match[1] || match[2] : null;
+    }
+
   function showDetails(index) {
     var selectedArtwork = data[index];
+    var imageUrl = `https://drive.google.com/uc?id=${extractFileId(selectedArtwork['รูปผลงาน'])}`;
     // Your existing showDetails function remains unchanged
-    $(".modal img").attr("src", selectedArtwork.img);
-    $(".modal p:nth-child(1)").text(selectedArtwork.name);
-    $(".modal p:nth-child(2)").text(selectedArtwork.artist);
-    $(".modal p:nth-child(4)").text(selectedArtwork.description);
+    $(".modal img").attr("src", imageUrl);
+    $(".modal p:nth-child(1)").text(selectedArtwork.ชื่อภาพ);
+    $(".modal p:nth-child(2)").text(selectedArtwork.ชื่อจริง);
+    $(".modal p:nth-child(4)").text(selectedArtwork.ความหมายภาพ);
     $(".modal").css("display", "block");
   }
 
@@ -60,12 +66,12 @@ $(document).ready(() => {
 });
 
 
-function searchartwork(type) {
+function searchartwork(ห้อง) {
   // Hide all elements with class "individual"
   $(".individual").css('display', 'none');
 
   // Escape special characters in the type value
-  var escapedType = $.escapeSelector(type);
+  var escapedType = $.escapeSelector(ห้อง);
 
   // Show the elements with the specified type
   $("." + escapedType).css('display', 'block');

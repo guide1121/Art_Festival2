@@ -9,8 +9,6 @@ $(document).ready(() => {
   fetch('https://script.google.com/macros/s/AKfycbzuGyfMa8KhKjSPcOUJx2NDJuOaMvnIXqxEVd80zrAnIq5ihQ2TLvlOcMkwyH5ZcmnGfQ/exec')
     .then(response => response.json())
     .then(jsonData => {
-      // Hide loading indicator
-      $("#loading-indicator").hide();
 
       // Store the JSON data in the 'data' variable
       data = jsonData;
