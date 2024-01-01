@@ -2,10 +2,16 @@ $(document).ready(() => {
   // Declare 'data' variable to store the fetched JSON data
   let data;
 
+  // Display loading indicator
+  $("#loading-indicator").show();
+
   // Fetch JSON data from a file
   fetch('https://script.google.com/macros/s/AKfycbzuGyfMa8KhKjSPcOUJx2NDJuOaMvnIXqxEVd80zrAnIq5ihQ2TLvlOcMkwyH5ZcmnGfQ/exec')
     .then(response => response.json())
     .then(jsonData => {
+      // Hide loading indicator
+      $("#loading-indicator").hide();
+
       // Store the JSON data in the 'data' variable
       data = jsonData;
 
@@ -24,15 +30,20 @@ $(document).ready(() => {
           <h4 style="margin-top: 1rem; font-size: 1.5rem;">${data[i].ชื่อเล่น}</h4>
           <p style="margin: 1rem 0;">${data[i]['แคปชงแคปชั่น']}</p>
           <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="instagram" href="https://www.instagram.com/${data[i].Instagram}/"><i class="fa fa-instagram"></i></a> </li> <li><p> ${data[i].Instagram}</p></li> 
-          </ul>
-        </div>
+            <ul class="social-icons">
+              <li><a class="instagram" href="https://www.instagram.com/${data[i].Instagram}/"><i class="fa fa-instagram"></i></a></li>
+              <li><p> ${data[i].Instagram}</p></li>
+            </ul>
+          </div>
         </div>`;
       }
       $("#blog-con").html(html);
     })
-    .catch(error => console.error('Error fetching JSON:', error));
+    .catch(error => {
+      // Hide loading indicator in case of an error
+      $("#loading-indicator").hide();
+      console.error('Error fetching JSON:', error);
+    });
 
   function showDetails(index) {
     var selectedArtwork = data[index]; // Use the 'data' array
