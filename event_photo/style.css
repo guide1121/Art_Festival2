@@ -96,7 +96,7 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
   align-items: center;
   padding: 20px 15px;
   border-radius: 12px;
@@ -128,7 +128,8 @@ nav {
   transition: all 0.4s ease;
 }
 
-.nav-links li a:hover:before {
+.nav-links li a:hover:before,
+.nav-links li a.active:before {
   width: 100%;
 }
 
@@ -139,10 +140,12 @@ nav {
   transition: transform 0.4s ease;
 }
 
-.nav-links li.forward a:hover:before {
+.nav-links li.forward a:hover:before,
+.nav-links li.forward a.active:before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
 
 @keyframes growDown {
   0% {
