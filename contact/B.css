@@ -103,10 +103,10 @@ nav{
 }
 
 .logo img {
-    width: 5vw;
+    max-width: 4vw;
     height: auto;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 

@@ -322,10 +322,11 @@ nav {
   cursor: pointer;
 }
 .logo img {
-  max-width: 5vw;
+  max-width: 4vw;
   height: auto;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gallery .gallery-item:hover {
