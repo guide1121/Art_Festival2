@@ -39,13 +39,16 @@ nav {
   margin-bottom: 20px;
 }
 
-
+.banner h1{
+  margin-top: 5% ;
+}
 .banner {
   align-items: center;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 50%;
   text-align: center;
   background-color: #0000004d;
+  background-size: cover;
   color: beige;
   height: auto;
   justify-content: center;
@@ -303,6 +306,9 @@ nav {
 }
 
 .gallery {
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: grid;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
@@ -359,8 +365,25 @@ nav {
 }
 .banner h1{
   font-size: 5vw;
-  margin-top: 30% ;
+  margin-top: 35% ;
 }
+.modal-page {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-details {
+  flex-direction: column;
+  font-size: medium;
+}
+
+.modal-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
 }
 
 
@@ -459,4 +482,101 @@ nav {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
   background-color: #555;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.modal-page {
+  z-index: 99;
+  max-width: 50vw;
+  max-height: 50vh;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-details img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.loading-indicator {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  animation: rotate_3922 1.2s linear infinite;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+
+.loading-indicator span {
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+
+.loading-indicator span:nth-of-type(1) {
+  filter: blur(5px);
+}
+
+.loading-indicator span:nth-of-type(2) {
+  filter: blur(10px);
+}
+
+.loading-indicator span:nth-of-type(3) {
+  filter: blur(25px);
+}
+
+.loading-indicator span:nth-of-type(4) {
+  filter: blur(50px);
+}
+
+.loading-indicator::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes rotate_3922 {
+from {
+ transform: translate(-50%, -50%) rotate(0deg);
+}
+
+to {
+ transform: translate(-50%, -50%) rotate(360deg);
+}
 }

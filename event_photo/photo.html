@@ -7,9 +7,15 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <div id="loading-indicator" class="loading-indicator">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <!-- logo and menu -->
   <nav class="bg-blur">
     <div class="logo">
@@ -35,12 +41,17 @@
       <!-- photo gallery -->
 
    <div class="gallery" id="gallery">
-    <div class="gallery-item">
-      <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
-  </div>
     </div>
     </div>
   </section>
+  <div class="modal" style="display:none;" onclick="closeModal()">
+    <div class="modal-page" onclick="event.stopPropagation();">
+        <br>
+        <div class="modal-details">
+            <img class="details-img" src="" alt="">
+        </div>
+    </div>
+</div>
   </div>
 
 
