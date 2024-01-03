@@ -222,7 +222,8 @@ body {
     justify-content: space-between;
 }
 
-.modal-details img {
+
+.details-img{
     max-width: 40%;
     max-height: 500px;
     border-radius: 10px;
