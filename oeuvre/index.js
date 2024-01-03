@@ -86,6 +86,8 @@ function searchartwork(ห้อง) {
 }
 
 function closeModal() {
+  var modal = document.querySelector('.modal-page');
+        modal.classList.add('close');
   // Hide the modal
   $(".modal").css("display", "none");
 }
