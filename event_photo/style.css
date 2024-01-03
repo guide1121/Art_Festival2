@@ -39,9 +39,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.banner h1{
-  margin-top: 5% ;
-}
 .banner {
   align-items: center;
   padding-top: 10%;
@@ -163,18 +160,15 @@ nav {
 }
 @media (max-width: 1029px) {
   .banner { 
-    padding-top: 15%;
-    padding-bottom: 20%;
+    padding-top: 1%;
+    padding-bottom: 40%;
 }
 }
 @media (max-width: 767px) {
   nav {
     height: 15vw;
 }
-.banner { 
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
+
 
 .nav-links {
     padding: 15px;
