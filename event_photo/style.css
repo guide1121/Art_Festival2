@@ -158,26 +158,33 @@ nav {
     transform: scaleY(1);
   }
 }
-
+@media (max-width: 1029px) {
+  .banner { 
+    padding-top: 15%;
+    padding-bottom: 20%;
+}
+}
 @media (max-width: 767px) {
-  /* Navigation */
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  nav {
+    height: 15vw;
+}
+.banner { 
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
 
-  .nav-links li {
-    margin: 8px 0;
-  }
+.nav-links {
+    padding: 15px;
+    justify-content: center;
+}
 
-  .nav-links li a:before {
-    height: 2px;
-  }
+.nav-links li {
+    margin: 0 12px;
+}
 
-  .nav-links li.upward a:before {
-    bottom: -2px;
-  }
-
+.nav-links li a {
+    font-size: 3vw;
+}
   /* Footer */
   .footer-top-con {
     column-gap: 1rem;
