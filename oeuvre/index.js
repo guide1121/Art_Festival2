@@ -15,7 +15,7 @@ $(document).ready(() => {
   $("#loading-indicator").show();
 
   // Fetch JSON data from a file
-  fetch('https://script.google.com/macros/s/AKfycbzQNwKy7wzClW-VJXwOiu22lYoamaQDrI58J-QI25owk423LV3JoYXHx3Yibnzwwlg_/exec')
+  fetch('https://script.google.com/macros/s/AKfycby-_OX-_hYKd6s_CO0ZuY05UZZ_rmiynmOoBfaMczf70qljH5B59eUi6gxAP9iKSoXh/exec')
     .then(response => response.json())
     .then(async jsonData => {
       // Store the JSON data in the 'data' variable
@@ -66,7 +66,7 @@ $(document).ready(() => {
     $(".modal img").attr("src", imageUrl);
     $(".modal p:nth-child(1)").text(selectedArtwork.ชื่อภาพ);
     $(".modal p:nth-child(2)").text(selectedArtwork.ชื่อจริง);
-    $(".modal p:nth-child(4)").text(selectedArtwork.ความหมายภาพ);
+    $(".modal p:nth-child(4)").text(selectedArtwork.รายละเอียด);
     $(".modal").css("display", "block");
   }
 
