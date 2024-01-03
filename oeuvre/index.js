@@ -38,8 +38,8 @@ $(document).ready(() => {
 
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].ห้อง}">
-                  <img class="artwork-img" src="${imageUrl}" alt="" style="height: auto; max-width: 100%; >
-                  <p style="font-size: 1vw;">${data[i].ชื่อภาพ}</p>
+                  <img class="artwork-img" src="${imageUrl}" alt=""  >
+                  <p style="font-size: 2vw;">${data[i].ชื่อภาพ}</p>
                   <p style="font-size: 1vw;">${data[i].ชื่อจริง}</p>
                 </div>`;
       }
