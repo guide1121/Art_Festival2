@@ -145,7 +145,11 @@ nav {
   transform: scaleX(1);
   transform-origin: left;
 }
-
+.anime-container .dot{
+  position: absolute;
+  border-radius: 50%;
+  background-color: hsl(60, 100%, 80%);
+}
 
 @keyframes growDown {
   0% {
