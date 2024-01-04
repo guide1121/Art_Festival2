@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,400;0,500;1,200&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -40,7 +41,7 @@ nav {
 
 .banner {
   align-items: center;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 50%;
   text-align: center;
   background-color: #0000004d;
