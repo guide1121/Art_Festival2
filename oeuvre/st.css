@@ -361,45 +361,53 @@ body {
 	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
 		0 0 60px #1eff45;
 }
-.bg-blur {
+nav{
     background: transparent;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);    
     display: flex;
     justify-content: space-between;
     padding: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background 0.3s; /* Add transition for smoother effect */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.logo img {
+    max-width: 4vw;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .nav-links {
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
     align-items: center;
     padding: 20px 15px;
     border-radius: 12px;
-}
-
-.nav-links li {
+  }
+  
+  .nav-links li {
     list-style: none;
     margin: 0 12px;
-}
-
-.nav-links li a {
+  }
+  
+  .nav-links li a {
     position: relative;
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     padding: 6px 0;
     text-decoration: none;
-    transition: color 0.3s; /* Add transition for smoother effect */
-}
-
-.nav-links li a:before {
+  }
+  
+  .nav-links li a:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -409,39 +417,26 @@ body {
     background: #efa434;
     border-radius: 12px;
     transition: all 0.4s ease;
-}
-
-.nav-links li a:hover:before,
-.nav-links li a.active:before {
+  }
+  
+  .nav-links li a:hover:before,
+  .nav-links li a.active:before {
     width: 100%;
-}
-
-.nav-links li.forward a:before {
+  }
+  
+  .nav-links li.forward a:before {
     width: 100%;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease;
-}
-
-.nav-links li.forward a:hover:before,
-.nav-links li.forward a.active:before {
+  }
+  
+  .nav-links li.forward a:hover:before,
+  .nav-links li.forward a.active:before {
     transform: scaleX(1);
     transform-origin: left;
-}
-
-/* Add a new class to handle the navigation bar background change on scroll */
-.scroll {
-    background: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
-}
-
-
-.logo img {
-    width: 5vw;
-    height: auto;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+  }
+  
 
 
 .footer-top-con {
