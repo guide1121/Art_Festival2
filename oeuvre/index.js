@@ -40,7 +40,7 @@ $(document).ready(() => {
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].ห้อง}">
                   <img class="artwork-img" src="${imageUrl}" alt=""  >
-                  <p style="font-size: 2vw;">${data[i].ชื่อภาพ}</p>
+                  <p style="font-size: 2vw;font-weight: 700;">${data[i].ชื่อภาพ}</p>
                   <p style="font-size: 1vw;">${data[i].ชื่อจริง}</p>
                 </div>`;
       }
@@ -98,14 +98,3 @@ function showAllArtwork() {
   $(".individual").css('display', 'block');
 }
 
-$(document).ready(function() {
-  var navbar = $("nav");
-  $(window).scroll(function() {
-    // Add the 'fixed' class to the navbar when the user scrolls down
-    if ($(window).scrollTop() > navbar.offset().top) {
-      navbar.addClass("fixed");
-    } else {
-      navbar.removeClass("fixed");
-    }
-  });
-});

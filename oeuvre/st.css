@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,400;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -171,6 +171,7 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
+    padding-top: 15%;
 }
 
 .modal-page {
@@ -178,11 +179,11 @@ body {
     z-index: 99;
     min-width: 30vw;
     min-height: 30vw;
-    max-width: 90vw;
+    max-width: 70%;
+    height: auto;
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
     border: 1px solid #888;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
@@ -361,44 +362,44 @@ body {
 		0 0 60px #1eff45;
 }
 .bg-blur {
-    overflow: hidden;
-      background: transparent;
-      -webkit-backdrop-filter: blur(10px);  
-      backdrop-filter: blur(10px);  
-      display: flex;
-      justify-content: space-between;
-      padding: 5px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      position: fixed;
-      top: 0;
-      width: 100%;
-  }
-.nav-links {
     background: transparent;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     display: flex;
-    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s; /* Add transition for smoother effect */
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px 15px;
     border-radius: 12px;
-  }
-  
-  .nav-links li {
+}
+
+.nav-links li {
     list-style: none;
     margin: 0 12px;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     position: relative;
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     padding: 6px 0;
     text-decoration: none;
-  }
-  
-  .nav-links li a:before {
+    transition: color 0.3s; /* Add transition for smoother effect */
+}
+
+.nav-links li a:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -408,26 +409,31 @@ body {
     background: #efa434;
     border-radius: 12px;
     transition: all 0.4s ease;
-  }
-  
-  .nav-links li a:hover:before,
-  .nav-links li a.active:before {
+}
+
+.nav-links li a:hover:before,
+.nav-links li a.active:before {
     width: 100%;
-  }
-  
-  .nav-links li.forward a:before {
+}
+
+.nav-links li.forward a:before {
     width: 100%;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease;
-  }
-  
-  .nav-links li.forward a:hover:before,
-  .nav-links li.forward a.active:before {
+}
+
+.nav-links li.forward a:hover:before,
+.nav-links li.forward a.active:before {
     transform: scaleX(1);
     transform-origin: left;
-  }
-  
+}
+
+/* Add a new class to handle the navigation bar background change on scroll */
+.scroll {
+    background: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
+}
+
 
 .logo img {
     width: 5vw;
