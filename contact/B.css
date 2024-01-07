@@ -14,8 +14,17 @@ body {
     background-position: center; 
     -webkit-backdrop-filter: blur(5px);  
     backdrop-filter: blur(5px); 
-  
-    
+
+  }
+  #yt-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    pointer-events: none;
+    z-index: -1;
+    background-color: #3333339d;
   }
   .loading-indicator {
     margin-top: 5%;
