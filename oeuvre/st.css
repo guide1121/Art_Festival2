@@ -566,7 +566,37 @@ nav{
 
 /* Media Queries */
 
+
+@media (max-width:1000px){
+    .container-class{
+        padding-top: 12vw;
+    }
+}
 @media (max-width: 768px) {
+    nav { 
+        padding-right:1vw;
+    }
+
+    .class {
+        padding-top: 10%;
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    .class a {
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5vw;
+    }
+    .container-class{
+        flex-direction: column;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw
+    }
+
     nav {
         height: 15vw;
     }
@@ -639,12 +669,6 @@ nav{
         font-size: 1.2vw;
     }
 
-    .class {
-        padding-top: 10%;
-        width: 10%;
-        display: flex;
-        flex-direction: column;
-    }
     .footer-top-con {
         flex-direction: column;
         align-items: left;
@@ -659,5 +683,104 @@ nav{
         margin-top: 2vw;
         padding-left: 0;
         align-items: left;
+    }
+}
+
+@media (max-width: 425px) {
+
+    nav {
+        height: 15vw;
+    }
+    .individual p{
+        font-size: 0.5vw;
+    }
+    .artwork{
+        padding-top: 8%;
+    }
+    .artwork-img {
+        max-width: 200%;
+        margin-bottom: 5px;
+        align-items: center;
+        border: 2px solid #2a2a2a; /* Border style */
+    }
+    .modal-page {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .modal-details {
+        flex-direction: column;
+        font-size: medium;
+    }
+
+    .modal-details img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .details {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .nav-links {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 12px;
+    }
+
+    .nav-links li a {
+        font-size: 2vw;
+    }
+
+    .classroom {
+        font-size: 1.5vw;
+    }
+
+    .individual {
+        margin-bottom: 15%;
+        padding-top: 5%;
+    }
+
+    .classroom {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2vw;
+    }
+
+    .class {
+        padding-top: 10%;
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    .class a {
+        margin-right:10px;
+        padding: 10px;
+        font-size: 2vw;
+    }
+    .container-class{
+        padding-left: 0.5vw
+    }
+    
+    .footer-top-con {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .footer-top-item {
+        max-width: 100%;
     }
 }
