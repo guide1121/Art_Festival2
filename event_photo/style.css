@@ -15,16 +15,19 @@ body {
   background-position: center;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  background-image: url('https://eu-assets.simpleview-europe.com/manchester2016/imageresizer/?image=%2Fdmsimgs%2Fmanchester-art-gallery_2__1332734200.jpg&action=ProductDetail') ;
+
 }
 
-#video-background {
+#yt-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
   z-index: -1;
+  background-color: #3333339d;
 }
 
 nav {

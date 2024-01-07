@@ -7,7 +7,17 @@
     font-family: 'Prompt', sans-serif;
 }
 
-
+#yt-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    pointer-events: none;
+    z-index: -1;
+    background-color: #3333339d;
+  }
+  
 .loading-indicator {
     
       position: absolute;
@@ -76,6 +86,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-image: url('https://eu-assets.simpleview-europe.com/manchester2016/imageresizer/?image=%2Fdmsimgs%2Fmanchester-art-gallery_2__1332734200.jpg&action=ProductDetail') ;
 }
 
 #video-background {
