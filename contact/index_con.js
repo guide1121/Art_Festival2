@@ -6,7 +6,7 @@ $(document).ready(() => {
   $("#loading-indicator").show();
 
   // Fetch JSON data from a file
-  fetch('https://script.google.com/macros/s/AKfycbzuGyfMa8KhKjSPcOUJx2NDJuOaMvnIXqxEVd80zrAnIq5ihQ2TLvlOcMkwyH5ZcmnGfQ/exec')
+  fetch('https://script.google.com/macros/s/AKfycbz_TJIzQINjL6iWk4yB_6Vby_7bauO--vR-TwJTqqr63m5GKPdFg42KVv01XvybOKIwtA/exec')
     .then(response => response.json())
     .then(jsonData => {
 
@@ -20,7 +20,7 @@ $(document).ready(() => {
         const fileId = extractFileId(data[i]['รูปภาพตัวเอง (ขอรูปที่สวย/หล่อที่สุดด)']);
 
         // Create the new URL format
-        const imageUrl = `https://drive.google.com/uc?id=${fileId}`;
+        const imageUrl = `https://lh3.google.com/u/0/d/${fileId}`;
 
         // Add data-ห้อง attribute to store the "ห้อง" value
         html += `<div data-ห้อง="${data[i].ห้อง}" onclick="showDetails(${i})" class="individual" id="blog-item">
