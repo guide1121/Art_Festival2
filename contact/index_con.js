@@ -20,7 +20,7 @@ $(document).ready(() => {
         const fileId = extractFileId(data[i]['รูปภาพตัวเอง (ขอรูปที่สวย/หล่อที่สุดด)']);
 
         // Create the new URL format
-        const imageUrl = `https://lh3.google.com/u/0/d/${fileId}`;
+        const imageUrl = `https://drive.google.com/uc?id=${fileId}`;
 
         // Add data-ห้อง attribute to store the "ห้อง" value
         html += `<div data-ห้อง="${data[i].ห้อง}" onclick="showDetails(${i})" class="individual" id="blog-item">
