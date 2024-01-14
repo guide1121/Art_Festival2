@@ -9,32 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-      // Replace 'VIDEO_ID' with your YouTube video ID
-      var videoId = 'Jox6R5-rIH0';
-      var player;
-      function onYouTubeIframeAPIReady() {
-          player = new YT.Player('yt-background', {
-              videoId: videoId,
-              playerVars: {
-                  autoplay: 1,
-                  controls: 0,
-                  showinfo: 0,
-                  modestbranding: 1,
-                  loop: 1,
-                  playlist: videoId,
-              },
-              events: {
-                  onReady: function (event) {
-                      event.target.mute();
-                  }
-              }
-          });
-      }
-  </script>
+
 </head>
 <body>
-  <div id="loading-indicator" class="loading-indicator">
+  <div id="loading-indicator" class="loading-indicator" style="display: none;">
     <span></span>
     <span></span>
     <span></span>
@@ -63,8 +41,11 @@
 <br>
 <br>
       <!-- photo gallery -->
-
+      <p>No photos available yet</p>
    <div class="gallery" id="gallery">
+    <div class="gallery-item" style="align-items: center;">
+
+  </div>
     </div>
     </div>
   </section>
@@ -101,7 +82,7 @@
       </div>
     </div>
   </footer>
-  <script src = "script.js"></script>
+  <script src = ""></script>
 
 </body>
 </html>
