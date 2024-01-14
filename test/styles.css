@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,400;0,500;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #131316;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+section{
+    display : grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: 100px
+    z-index: -99;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  transition: all 2s;
+  filter : blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-redueced-motion){
+  .hidden, .show{
+    transition: none;
+  }
+}
+

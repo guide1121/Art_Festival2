@@ -5,27 +5,59 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
+    
+    color: #ffffff;
 }
 
 body {
+  background-color: #131316;
   margin: 0;
-  padding: 0;
-  background-image: url("bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center; /* Optional: Center the background image */
-  background-attachment: fixed; /* Fix the background image when scrolling */
 }
 
-#yt-background {
-  position: fixed;
+section{
+  display : grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  z-index: -99;
+}
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transition: all 2s;
+}
+
+.show{
+opacity: 1;
+transition: all 2s;
+filter : blur(0);
+
+}
+.pallalax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pallalax img{
+  position: absolute;
   top: 0;
   left: 0;
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
   pointer-events: none;
-  z-index: -1;
-  background-color: #3333339d;
+}
+#text{
+  position: absolute;
+  font-size: 5em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 50%;
 }
 
 .bg-blur {
@@ -39,6 +71,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 
 }
 
@@ -59,8 +92,14 @@ body {
     height: auto;
     justify-content: center;
     display: block;
-    background-color: #0000004d;
     
+}
+
+.banner h1{
+    font-size: 5vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 .banner-info {
@@ -82,6 +121,7 @@ body {
 }
 
 .footer-top-con {
+    margin-top: 100%;
     padding: 20px;
     background: transparent;
     -webkit-backdrop-filter: blur(10px);  
@@ -91,7 +131,7 @@ body {
     column-gap: 3rem;
     color: beige;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
-    background-color: #0000004d;
+
 }
 
 .footer-top-item {
@@ -135,7 +175,7 @@ body {
   left: 0;
   height: 3px;
   width: 0%;
-  background: #efa434;
+  background: #00e1ff;
   border-radius: 12px;
   transition: all 0.4s ease;
 }
@@ -234,14 +274,14 @@ body {
 .social-icons li.title {
     margin-right: 15px;
     text-transform: uppercase;
-    color: #96a2b2;
+    color: #000000;
     font-weight: 700;
     font-size: 13px;
 }
 
 .social-icons a {
-    background-color: #eceeef;
-    color: #818a91;
+    background-color: #000000;
+    color: #000000;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
