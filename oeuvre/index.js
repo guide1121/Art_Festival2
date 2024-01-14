@@ -26,7 +26,7 @@ $(document).ready(() => {
       var html = '';
       for (let i = 0; i < data.length; i++) {
         const fileId = extractFileId(data[i]['รูปผลงาน']);
-        const imageUrl = `https://drive.google.com/uc?id=${fileId}`;
+        const imageUrl = `https://drive.google.com/thumbnail?id=${fileId}`;
 
         // Load the image dynamically to get its dimensions
         const imgElement = await loadImage(imageUrl);

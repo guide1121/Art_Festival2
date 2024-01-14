@@ -20,7 +20,7 @@ $(document).ready(() => {
           const fileId = extractFileId(data[i]['img']);
   
           // Create the new URL format
-          const imageUrl = `https://drive.google.com/uc?id=${fileId}`;
+          const imageUrl = `https://drive.google.com/thumbnail?id=${fileId}`;
   
           // Add data-ห้อง attribute to store the "ห้อง" value
           html += `<div  onclick="showDetails(${i})" class="gallery-item">
