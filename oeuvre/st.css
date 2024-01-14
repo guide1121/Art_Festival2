@@ -482,6 +482,7 @@ nav{
     column-gap: 3rem;
     color: beige;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0000004d;
 }
 
 .footer-top-item {
