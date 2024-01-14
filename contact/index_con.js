@@ -23,7 +23,7 @@ $(document).ready(() => {
         const imageUrl = `https://drive.google.com/thumbnail?id=${fileId}`;
 
         // Add data-ห้อง attribute to store the "ห้อง" value
-        html += `<div data-ห้อง="${data[i].ห้อง}" onclick="showDetails(${i})" class="individual" id="blog-item">
+        html += `<div data-ห้อง="${data[i].ห้อง}" onclick="showDetails(${i})" class="individual" id="blog-item" style="padding-top: 20px;style="margin-bottom: 20px;">
           <img class="contact-img" src="${imageUrl}" alt="">
           <h4 style="margin-top: 1rem; font-size: 1.5rem;">${data[i].ชื่อเล่น}</h4>
           <p style="margin: 1rem 0;">${data[i]['แคปชงแคปชั่น']}</p>

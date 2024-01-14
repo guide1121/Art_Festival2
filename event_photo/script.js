@@ -46,7 +46,7 @@ $(document).ready(() => {
   
     function showDetails(index) {
       var selectedArtwork = data[index];
-      var imageUrl = `https://drive.google.com/uc?id=${extractFileId(selectedArtwork['img'])}`;
+      var imageUrl = `https://drive.google.com/thumbnail?id=${extractFileId(selectedArtwork['img'])}`;
       // Update modal content with selected artwork details
       $(".modal img").attr("src", imageUrl);
       $(".modal").css("display", "flex");
