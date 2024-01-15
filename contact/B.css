@@ -104,13 +104,22 @@ nav{
 }
 
 .logo img {
-    max-width: 4vw;
+    max-width: 15vw;
     height: auto;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20x;
 }
-
+@media (max-width: 1000px) {
+    .logo img {
+        max-width: 30vw;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20x;
+    }
+  
+  }
 .nav-links {
     background: transparent;
     -webkit-backdrop-filter: blur(10px);

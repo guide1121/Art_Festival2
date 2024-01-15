@@ -115,13 +115,22 @@ body {
 }
 
 .logo img {
-    max-width: 4vw;
+    max-width: 15vw;
     height: auto;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20x;
 }
-
+@media (max-width: 1000px) {
+    .logo img {
+        max-width: 30vw;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20x;
+    }
+  
+  }
 .container-class {
     width: auto;
     padding-left: 5%;
@@ -408,13 +417,7 @@ nav{
     width: 100%;
 }
 
-.logo img {
-    max-width: 4vw;
-    height: auto;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 .nav-links {
     background: transparent;

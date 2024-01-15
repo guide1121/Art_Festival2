@@ -32,6 +32,7 @@ filter: blur(5px);
 transition: all 2s;
 }
 
+
 .show{
 opacity: 1;
 transition: all 2s;
@@ -54,7 +55,7 @@ filter : blur(0);
 }
 
 .sec {
-  margin-top: 130%;
+  margin-top: 200%;
   position: relative;
   align-items: left;
 }
@@ -87,13 +88,22 @@ filter : blur(0);
 }
 
 .logo img {
-    max-width: 4vw;
+    max-width: 15vw;
     height: auto;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20x;
 }
+@media (max-width: 1000px) {
+  .logo img {
+      max-width: 30vw;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 20x;
+  }
 
+}
 .banner {
     align-items: center;
     padding-top: 20%;

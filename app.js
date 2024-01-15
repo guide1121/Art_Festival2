@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver((entries) => {
+const observer2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         console.log(entry);
         if (entry.isIntersecting) {
@@ -10,4 +10,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements =  document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+
+hiddenElements.forEach((el) => observer2.observe(el));
