@@ -52,12 +52,23 @@ filter : blur(0);
   width: 100%;
   pointer-events: none;
 }
-#text{
-  position: absolute;
-  font-size: 5em;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 50%;
+
+.sec {
+  margin-top: 130%;
+  position: relative;
+  align-items: left;
+}
+.sec-text {
+  padding-left : 100px;
+  padding-right : 100px;
+}
+
+.sec img{
+  width: 100%;
+}
+
+.sec h2{
+  font-size: 3em;
 }
 
 .bg-blur {
