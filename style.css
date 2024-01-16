@@ -59,6 +59,15 @@ filter : blur(0);
   position: relative;
   align-items: left;
 }
+.sec2 {
+  margin-top: 200vw;
+  position: relative;
+  align-items: left;
+}
+.sec-detail{
+  display: flex;
+  padding-left: 100px;
+}
 .sec-text {
   padding-left : 100px;
   padding-right : 100px;
@@ -71,6 +80,7 @@ filter : blur(0);
 .sec h2{
   font-size: 3em;
 }
+
 
 .bg-blur {
   background: transparent;
