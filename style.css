@@ -86,7 +86,7 @@ filter : blur(0);
 }
 .arrow {
   position: absolute;
-  top: 65%;
+  top: 30vw;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: rotate(360deg);
@@ -149,12 +149,7 @@ filter : blur(0);
     margin-top: 10px;
     margin-bottom: 20x;
 }
-@media (max-width: 1475px){
 
-  #light{
-    width: 100%
-  }
-  }
   
 @media (max-width: 1000px) {
   .logo img {
