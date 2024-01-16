@@ -176,6 +176,9 @@ filter : blur(0);
     width : 100%;
     height : auto;
   }
+  .arrow{
+    top: 65%;
+  }
 }
 @media (max-width: 1000px) {
   .logo img {
