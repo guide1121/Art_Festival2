@@ -72,7 +72,11 @@ filter : blur(0);
   padding-left : 100px;
   padding-right : 100px;
 }
-
+#space{
+  position: absolute; 
+  width: 300vw; 
+  height: 300vw;
+}
 .sec img{
   width: 100%;
 }
@@ -105,12 +109,12 @@ filter : blur(0);
     margin-bottom: 20x;
 }
 @media (max-width: 1475px){
-  
-  }
+
   #light{
     width: 100%
   }
-}
+  }
+  
 @media (max-width: 1000px) {
   .logo img {
       max-width: 30vw;
