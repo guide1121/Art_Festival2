@@ -177,7 +177,7 @@ filter : blur(0);
     height : auto;
   }
   .arrow{
-    top: 65%;
+    display:none;
   }
 }
 @media (max-width: 1000px) {
