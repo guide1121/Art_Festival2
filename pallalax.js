@@ -7,6 +7,7 @@ let witch = document.getElementById('witch');
 let bird = document.getElementById('bird');
 let bg = document.getElementById('bg');
 let arrow =  document.querySelectorAll('.arrow');
+let rock = document.getElementById('rock');
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
