@@ -5,7 +5,7 @@ let mermaid = document.getElementById('mermaid');
 let fairy = document.getElementById('fairy');
 let witch = document.getElementById('witch');
 let bird = document.getElementById('bird');
-let bg = document.getElementById('bg');
+let space = document.getElementById('space');
 let arrow =  document.querySelectorAll('.arrow');
 let rock = document.getElementById('rock');
 window.addEventListener('scroll', () => {
@@ -50,6 +50,9 @@ window.addEventListener('scroll', () => {
     bird.style.width = 85 - value * 0.01 + 'vw';
     bird.style.height = 115 - value * 0.01 + 'vw';
     bird.style.left = 10 + value * 0.0055 + 'vw';
-    bg.style.filter = 'blur('+ value / 600 +'px)';
+
+    space.style.filter = 'blur('+ value / 600 +'px)';
+    space.style.marginTop = value * 0.030 + 'vw';
+    space.style.opacity = 1 - value / 600;
 });
 
