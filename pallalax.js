@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
     fox.style.marginTop = value * 0.025 + 'vw';
     fox.style.width =  115 - value * 0.01 + 'vw';
     fox.style.height = 160 - value * 0.01 + 'vw';
-    fox.style.left =  value * 0.0075 + 'vw';
+    fox.style.left =  value * 0.006 + 'vw';
 
 
     mermaid.style.marginTop = value * 0.025 + 'vw';
