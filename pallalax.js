@@ -21,15 +21,28 @@ window.addEventListener('scroll', () => {
     text.style.left = 8.8 + value * 0.0055 + 'vw';
 
 
-    fox.style.marginTop = value * 0.025 + 'vw';
+    fox.style.marginTop = value * 0.020 + 'vw';
     fox.style.width =  115 - value * 0.01 + 'vw';
     fox.style.height = 160 - value * 0.01 + 'vw';
     fox.style.left =  value * 0.006 + 'vw';
 
 
     mermaid.style.marginTop = value * 0.025 + 'vw';
+    mermaid.style.width =  115 - value * 0.01 + 'vw';
+    mermaid.style.height = 160 - value * 0.01 + 'vw';
+    mermaid.style.left =  value * 0.006 + 'vw';
+
+
     fairy.style.marginTop = value * 0.025 + 'vw';
-    witch.style.marginTop = value * 0.025 + 'vw';
+    fairy.style.width =  115 - value * 0.01 + 'vw';
+    fairy.style.height = 160 - value * 0.01 + 'vw';
+    fairy.style.right =  value * 0.006 + 'vw';
+
+    witch.style.marginTop = value * 0.023 + 'vw';
+    witch.style.width =  115 - value * 0.01 + 'vw';
+    witch.style.height = 160 - value * 0.01 + 'vw';
+    witch.style.right =  value * 0.006 + 'vw';
+
 
 
 
