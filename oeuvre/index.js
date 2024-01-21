@@ -16,7 +16,7 @@ $(document).ready(() => {
   $("#loading-indicator").show();
 
   // Fetch JSON data from a file
-  fetch('https://script.google.com/macros/s/AKfycby-_OX-_hYKd6s_CO0ZuY05UZZ_rmiynmOoBfaMczf70qljH5B59eUi6gxAP9iKSoXh/exec')
+  fetch('https://script.google.com/macros/s/AKfycbwBbgnWdNmcw4oppVXrmWeN5t-6sRYmw6Npb3SI6v4I2aCpjxqwC4xaU1YBJkiecGFv/exec')
     .then(response => response.json())
     .then(async jsonData => {
       // Store the JSON data in the 'data' variable
@@ -25,7 +25,7 @@ $(document).ready(() => {
       // Process the JSON data
       var html = '';
       for (let i = 0; i < data.length; i++) {
-        const fileId = extractFileId(data[i]['รูปผลงาน']);
+        const fileId = extractFileId(data[i]['ผลงาน']);
         const imageUrl = `https://drive.google.com/thumbnail?id=${fileId}`;
 
         // Load the image dynamically to get its dimensions
@@ -40,8 +40,8 @@ $(document).ready(() => {
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].ห้อง}">
                   <img class="artwork-img" src="${imageUrl}" alt=""  >
-                  <p style="font-size: 2vw;font-weight: 700;">${data[i].ชื่อภาพ}</p>
-                  <p style="font-size: 1vw;">${data[i].ชื่อจริง}</p>
+                  <p style="font-size: 2vw;font-weight: 700;">${data[i].ชื่อผลงาน}</p>
+                  <p style="font-size: 1vw;">${data[i].ชื่อนามสกุล}</p>
                 </div>`;
       }
 
@@ -62,12 +62,12 @@ $(document).ready(() => {
 
   function showDetails(index) {
     var selectedArtwork = data[index];
-    var imageUrl = `https://drive.google.com/uc?id=${extractFileId(selectedArtwork['รูปผลงาน'])}`;
+    var imageUrl = `https://lh3.googleusercontent.com/d/${extractFileId(selectedArtwork['ผลงาน'])}?authuser=0`;
     // Your existing showDetails function remains unchanged
     $(".modal img").attr("src", imageUrl);
-    $(".modal p:nth-child(1)").text(selectedArtwork.ชื่อภาพ);
-    $(".modal p:nth-child(2)").text(selectedArtwork.ชื่อจริง);
-    $(".modal p:nth-child(4)").text(selectedArtwork.รายละเอียด);
+    $(".modal p:nth-child(1)").text(selectedArtwork.ชื่อผลงาน);
+    $(".modal p:nth-child(2)").text(selectedArtwork.ชื่อนามสกุล);
+    $(".modal p:nth-child(4)").text(selectedArtwork.แนวคิดของผลงาน);
     $(".modal").css("display", "block");
   }
 
