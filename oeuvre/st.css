@@ -180,21 +180,27 @@ body {
 .individual {
     cursor: pointer;
     transition: 0.3s;
-    margin-bottom: 30%;
-    margin: 5px;
+    width: 200px; 
+    height: 250px;
+    margin-bottom: 150px;
 }
 
 .individual:hover {
     transform: scale(1.03);
 }
+.artwork-name{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #ffffff;
+}
 
 .artwork-img {
-    object-fit: cover;
     border-radius: 10px;
-    border: 5px solid #2a2a2a; /* Border style */
-    max-height: 50%; 
-    height: auto;
-    max-width: 100%;
+    border: 5px solid #2a2a2a;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
     
 }
 
@@ -578,32 +584,46 @@ nav{
 }
 
 /* Media Queries */
+@media only screen and (max-width: 700px) {
+    .individual {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
 
+    .artwork-name {
+      font-size: 4vw;
+    }
 
+    .artwork-img {
+      height: auto;
+    }
+  }
 @media (max-width:1000px){
     .container-class{
         padding-top: 12vw;
     }
 }
 @media (max-width: 768px) {
+
     nav { 
         padding-right:1vw;
     }
 
     .class {
+        padding: 2vw;
         padding-top: 10%;
         width: 10%;
-        padding-left: 1vw;
         display: flex;
         flex-direction: row;
     }
     .class a {
-        margin-right: 20px;
+        margin-right: 1.5vw;
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 3vw;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     .container-class{
         flex-direction: column;
@@ -661,13 +681,6 @@ nav{
         font-size: 3vw;
     }
 
-    .classroom {
-        font-size: 1.5vw;
-        height: 12vw;
-        padding-top: 15px;
-        padding-bottom: 20px;
-    }
-
     .individual {
         margin-bottom: 15%;
         padding-top: 5%;
@@ -702,13 +715,24 @@ nav{
         padding-left: 0;
         align-items: left;
     }
-}
+    .nav-links {
+        padding: 15px;
+        justify-content: center;
+    }
 
-@media (max-width: 425px) {
+    .nav-links li {
+        margin: 0 12px;
+    }
 
+    .nav-links li a {
+        font-size: 2vw;
+    }
     nav {
         height: 15vw;
     }
+}
+
+@media (max-width: 430px) {
     .individual p{
         font-size: 0.5vw;
     }
@@ -743,46 +767,14 @@ nav{
         padding-left: 0;
     }
 
-    .nav-links {
-        padding: 15px;
-        justify-content: center;
-    }
 
-    .nav-links li {
-        margin: 0 12px;
-    }
-
-    .nav-links li a {
-        font-size: 2vw;
-    }
 
     .individual {
         margin-bottom: 15%;
         padding-top: 5%;
     }
 
-    .classroom {
-        background: transparent;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        margin-bottom: 10px;
-        border-radius: 10px;
-        color: rgb(255, 255, 255);
-        transition: 0.3s;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.2vw;
-    }
-
-    .class {
-        padding-top: 10%;
-        width: 10%;
-        padding-left: 5vw;
-        display: flex;
-        flex-direction: row;
-    }
     .class a {
-        margin-right:10px;
         padding: 10px;
         font-size: 2vw;
     }

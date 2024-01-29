@@ -39,8 +39,8 @@ $(document).ready(() => {
 
         html += `<div onclick="showDetails(${i})"
                     class="individual ${data[i].ห้อง}">
-                  <img class="artwork-img" src="${imageUrl}" alt=""  >
-                  <p style="font-size: 2vw;font-weight: 700;">${data[i].ชื่อผลงาน}</p>
+                    <img class="artwork-img" src="${imageUrl}" alt="" onload="resizeImage(this)">
+                  <p style="font-size: 2vw;font-weight: 700;" class = "artwork-name">${data[i].ชื่อผลงาน}</p>
                   <p style="font-size: 1vw;">${data[i].ชื่อนามสกุล}</p>
                 </div>`;
       }
@@ -74,6 +74,26 @@ $(document).ready(() => {
   window.showDetails = showDetails; // Expose the function globally
 });
 
+function resizeImage(img) {
+  const container = img.parentElement;
+  const containerWidth = container.offsetWidth;
+  const containerHeight = container.offsetHeight;
+
+  const imageWidth = img.naturalWidth;
+  const imageHeight = img.naturalHeight;
+
+  const widthRatio = containerWidth / imageWidth;
+  const heightRatio = containerHeight / imageHeight;
+
+  const minRatio = Math.min(widthRatio, heightRatio);
+
+  const maxWidth = 450; // Adjust this based on your preference
+
+  if (containerWidth < maxWidth) {
+    img.style.width = `${containerWidth}px`;
+    img.style.height = `${imageHeight * minRatio}px`;
+  }
+}
 
 function searchartwork(ห้อง) {
   // Hide all elements with class "individual"
