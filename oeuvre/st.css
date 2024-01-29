@@ -590,7 +590,6 @@ nav{
     }
 }
 @media (max-width: 768px) {
-
     nav { 
         padding-right:1vw;
     }
@@ -617,9 +616,6 @@ nav{
 
     nav {
         height: 15vw;
-    }
-    .individual p{
-        font-size: 0.5vw;
     }
     .artwork-img {
         object-fit: cover;
@@ -661,14 +657,6 @@ nav{
         font-size: 3vw;
     }
 
-    .individual {
-        margin-bottom: 15%;
-        padding-top: 5%;
-        height: 100%;
-        width: 100%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     .classroom {
         background: transparent;
@@ -716,12 +704,6 @@ nav{
 }
 
 @media (max-width: 430px) {
-    .individual p{
-        font-size: 0.5vw;
-    }
-    .artwork{
-        padding-top: 8%;
-    }
     .artwork-img {
         max-width: 200%;
         margin-bottom: 5px;
@@ -751,11 +733,6 @@ nav{
     }
 
 
-
-    .individual {
-        margin-bottom: 15%;
-        padding-top: 5%;
-    }
 
     .class a {
         padding: 10px;
