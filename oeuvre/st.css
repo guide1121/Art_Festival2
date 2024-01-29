@@ -584,21 +584,6 @@ nav{
 }
 
 /* Media Queries */
-@media only screen and (max-width: 700px) {
-    .individual {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .artwork-name {
-      font-size: 4vw;
-    }
-
-    .artwork-img {
-      height: auto;
-    }
-  }
 @media (max-width:1000px){
     .container-class{
         padding-top: 12vw;
@@ -609,7 +594,6 @@ nav{
     nav { 
         padding-right:1vw;
     }
-
     .class {
         padding: 2vw;
         padding-top: 10%;
@@ -639,12 +623,14 @@ nav{
     }
     .artwork{
         padding-top: 8%;
+        grid-gap: 10px;
     }
     .artwork-img {
-        max-width: 100%;
-        margin-bottom: 5px;
-        align-items: center;
-        border: 2px solid #2a2a2a; /* Border style */
+        max-width: 100%; /* Adjust this value as needed */
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 5px solid #2a2a2a;
     }
     .modal-page {
         max-width: 70%;
@@ -686,6 +672,8 @@ nav{
         padding-top: 5%;
         height: 100%;
         width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .classroom {
