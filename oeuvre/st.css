@@ -621,10 +621,6 @@ nav{
     .individual p{
         font-size: 0.5vw;
     }
-    .artwork{
-        padding-top: 8%;
-        grid-gap: 10px;
-    }
     .artwork-img {
         object-fit: cover;
         border-radius: 10px;
