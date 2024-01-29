@@ -607,7 +607,7 @@ nav{
         padding-right: 3vw;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 1vw;
+        font-size: 2vw;
     }
     .container-class{
         flex-direction: column;
@@ -626,8 +626,6 @@ nav{
         grid-gap: 10px;
     }
     .artwork-img {
-        max-width: 100%; /* Adjust this value as needed */
-        height: auto;
         object-fit: cover;
         border-radius: 10px;
         border: 5px solid #2a2a2a;
