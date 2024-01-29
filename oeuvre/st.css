@@ -123,7 +123,7 @@ body {
 }
 @media (max-width: 1000px) {
     .logo img {
-        max-width: 30vw;
+        max-width: 25vw;
         height: auto;
         margin-left: 20px;
         margin-top: 10px;
@@ -160,7 +160,7 @@ body {
 .classroom {
     background: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px #00000033;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -593,6 +593,7 @@ nav{
     .class {
         padding-top: 10%;
         width: 10%;
+        padding-left: 1vw;
         display: flex;
         flex-direction: row;
     }
@@ -662,11 +663,15 @@ nav{
 
     .classroom {
         font-size: 1.5vw;
+        height: 12vw;
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
 
     .individual {
         margin-bottom: 15%;
         padding-top: 5%;
+        height: 40vw;
     }
 
     .classroom {
@@ -751,10 +756,6 @@ nav{
         font-size: 2vw;
     }
 
-    .classroom {
-        font-size: 1.5vw;
-    }
-
     .individual {
         margin-bottom: 15%;
         padding-top: 5%;
@@ -776,6 +777,7 @@ nav{
     .class {
         padding-top: 10%;
         width: 10%;
+        padding-left: 5vw;
         display: flex;
         flex-direction: row;
     }
