@@ -210,7 +210,7 @@ nav {
 }
 
 .nav-links li a {
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
   /* Footer */
   .footer-top-con {
@@ -367,42 +367,7 @@ nav {
   transform: scale(1.025);
 }
 
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
-  nav {
-    height: 15vw;
-}
-.nav-links li {
-  margin: 0 12px;
-}
 
-.nav-links li a {
-  font-size: 3vw;
-}
-.banner h1{
-  font-size: 5vw;
-  margin-top: 35% ;
-}
-.modal-page {
-  max-width: 100%;
-  height: auto;
-}
-
-.modal-details {
-  flex-direction: column;
-  font-size: medium;
-}
-
-.modal-details img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-}
 
 
 @-moz-keyframes zoomin {
