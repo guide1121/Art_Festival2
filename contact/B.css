@@ -307,7 +307,7 @@ nav{
         padding-bottom: 30px;
     }
     .contact-img{
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 }
@@ -368,7 +368,7 @@ nav{
 }
 
 .contact-img {
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
