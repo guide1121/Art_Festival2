@@ -26,7 +26,7 @@ $(document).ready(() => {
         html += `<div data-ห้อง="${data[i].ห้อง}" onclick="showDetails(${i})" class="individual" id="blog-item" style="padding-top: 20px;style="margin-bottom: 20px;">
           <img class="contact-img" src="${imageUrl}" alt="">
           <h4 style="margin-top: 1rem; font-size: 1rem; color: white;">${data[i].ชื่อเล่น}</h4>
-          <p style="margin: 1rem 0; font-size: 0.5rem;">${data[i]['แคปชงแคปชั่น']}</p>
+          <p style="margin: 1rem 0; font-size: 0.8rem;">${data[i]['แคปชงแคปชั่น']}</p>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li><a class="instagram" href="https://www.instagram.com/${data[i].Instagram}/"><i class="fa fa-instagram"></i></a></li>
