@@ -87,14 +87,12 @@ function resizeImage(img) {
 
   const minRatio = Math.min(widthRatio, heightRatio);
 
-  const targetWidth = imageWidth * minRatio;
-  const targetHeight = imageHeight * minRatio;
+  let targetWidth = imageWidth * minRatio;
+  let targetHeight = imageHeight * minRatio;
 
   img.style.width = `${targetWidth}px`;
   img.style.height = `${targetHeight}px`;
 }
-
-
 
 function searchartwork(ห้อง) {
   // Hide all elements with class "individual"
